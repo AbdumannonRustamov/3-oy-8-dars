@@ -1,0 +1,253 @@
+/* Eng katta ekran o'lchamlari */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #ebf6f7;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: #789c9c;
+    background-image: url(../image/header\ rasm.svg);
+}
+
+.main-container {
+    margin-top: 30px;
+}
+
+.job {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: -5px 5px 10px 5px rgba(151, 151, 151, 0.2);
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.job-info .logo img {
+    width: 77px;
+    height: 77px;
+}
+
+.text-info .head-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.head-info a {
+    color: #5ca5a5;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.head-info a:hover {
+    color: rgb(255, 166, 0);
+}
+
+.head-info div {
+    display: flex;
+    gap: 8px;
+}
+
+.head-info div span {
+    background-color: #5ca5a5;
+    padding: 5px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.head-info div span:last-child {
+    background-color: #2b3939;
+}
+
+.text-info .job-title {
+    margin-bottom: 7px;
+}
+
+.text-info .job-title h2 {
+    color: #2b3939;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.text-info .food-info {
+    display: flex;
+    align-items: center;
+    gap: 18.5px;
+}
+
+.food-info .info {
+    color: #7c8f8f;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.food-info .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #979797;
+}
+
+.job-skills {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.job-skills span {
+    color: #5ca5a5;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #f0f7fa;
+    transition: all 0.5s ease-in-out;
+}
+
+.job-skills span:hover {
+    background-color: #6da7a7;
+    color: white;
+    cursor: pointer;
+}
+
+.search {
+    width: 100%;
+    background-color: white;
+    box-shadow: -5px 5px 10px 5px rgba(151, 151, 151, 0.2);
+    border-radius: 4px;
+    padding: 20px 40px;
+    position: relative;
+    top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search span {
+    cursor: pointer;
+    color: #5ca5a5;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search span:hover {
+    color: orange;
+}
+
+.search input {
+    width: 90%;
+    border: none;
+    font-size: 18px;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 87%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .job {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .job-info {
+        gap: 16px;
+    }
+
+    .job-skills {
+        margin-top: 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 70px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        top: 0;
+        padding: 15px 20px;
+    }
+
+    .job-info .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-info .head-info a {
+        font-size: 16px;
+    }
+
+    .text-info .job-title h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .job {
+        padding: 16px;
+    }
+
+    .text-info .job-title h2 {
+        font-size: 18px;
+    }
+
+    .text-info .head-info a {
+        font-size: 15px;
+    }
+
+    .job-skills {
+        gap: 8px;
+    }
+
+    .job-skills span {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .search input {
+        font-size: 16px;
+    }
+}
